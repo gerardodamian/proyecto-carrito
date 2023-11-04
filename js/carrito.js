@@ -5,7 +5,7 @@ const productosDisponibles = [
         nombre: "Zapatillas adidas Running Duramo",
         precio: 64900,
         talles: [40, 41, 42],
-        imagen : "https://github.com/gerardodamian/proyecto-carrito/blob/master/multimedia/zapatilla.jpeg",
+        imagen : "github.com/gerardodamian/proyecto-carrito/blob/master/multimedia/zapatilla.jpeg",
     },
     {
         id: 2,
