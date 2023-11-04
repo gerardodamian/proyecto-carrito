@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+body {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../multimedia/fondo.jpg);
+}
+h1 {
+    color: yellow;
+    font-size: 50px;
+    text-shadow: 3px 6px rgb(1, 44, 1);
+    margin-right: 30px;
+    margin-top: 55px;
+}
+p {
+    color: antiquewhite;
+    margin: 30px;
+    font-size: 25px;
+}
+h2 {
+    color: antiquewhite;
+    margin: 30px;
+}
+.total {
+    display: flexbox;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: rgb(6, 68, 184);
+    border-radius: 10px;
+}
+
+.producto-card {
+    border: 1px solid #071772;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(73, 146, 189, 0.527);
+    border-radius: 10px;
+}
+.producto-card img {
+    max-width: 100%;
+}
+.boton-talle {
+    margin: 7px;
+    border-radius: 7px;
+    background-color: rgb(228, 228, 42);
+}
+.precio{
+    color: blue;
+    font-size: 30px;
+    text-shadow: 2px 2px yellow;
+}
+.nombre{
+    text-shadow: 1px 1px rgb(230, 16, 16);
+}
+.boton-compra{
+    box-shadow: 2px 2px rgb(174, 123, 221);
+    border-radius: 7px;
+    color: rgb(228, 220, 220);
+    background-color: #071772;
+}
