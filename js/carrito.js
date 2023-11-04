@@ -5,7 +5,7 @@ const productosDisponibles = [
         nombre: "Zapatillas adidas Running Duramo",
         precio: 64900,
         talles: [40, 41, 42],
-        imagen: "../multimedia/zapatilla.jpeg",
+        imagen : "https://github.com/gerardodamian/proyecto-carrito/blob/master/multimedia/zapatilla.jpeg",
     },
     {
         id: 2,
@@ -81,6 +81,8 @@ const productosDisponibles = [
         imagen: "../multimedia/remera-topper.jpg",
     },
 ];
+
+
 // Arreglo para almacenar los productos en el carrito
 const carrito = [];
 // Función para mostrar tarjetas de productos
@@ -91,6 +93,7 @@ function mostrarProductos() {
     productosDisponibles.forEach((producto) => {
         const productoCard = document.createElement("div");
         productoCard.classList.add("producto-card");
+        
 
         const productoImagen = document.createElement("img");
         productoImagen.src = producto.imagen;
