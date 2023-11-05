@@ -5,7 +5,7 @@ const productosDisponibles = [
         nombre: "Zapatillas adidas Running Duramo",
         precio: 64900,
         talles: [40, 41, 42],
-        imagen : "https://github.com/gerardodamian/proyecto-carrito/blob/master/multimedia/zapatilla.jpeg",
+        imagen : "https://media.solodeportes.com.ar/media/catalog/product/cache/faae2c37ab1d315e4b697a7f62b421b7/z/a/zapatillas-running-adidas-duramo-10-sl-azul-100010gw4080001-1.jpg",
     },
     {
         id: 2,
@@ -98,6 +98,7 @@ function mostrarProductos() {
         const productoImagen = document.createElement("img");
         productoImagen.src = producto.imagen;
         productoImagen.alt = producto.nombre;
+        
         
 
         const productoNombre = document.createElement("h3");
