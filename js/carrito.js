@@ -34,52 +34,65 @@ const productosDisponibles = [
     },
     {
         id: 6,
-        nombre: "Pelota Rwc 2023 Gilbert Sport 78 Tienda Oficial",
-        precio: 39400,
-        imagen: "https://www.digitalsport.com.ar/files/products/63581476e93db-604582-1200x1200.jpg",
+        nombre: "Pelota Helicoidal 78 Sport 78 Tienda Oficial",
+        precio: 17800,
+        imagen: "https://www.digitalsport.com.ar/files/products/64a3352c94acd-625010-500x500.jpg",
     },
     {
         id: 7,
+        nombre: "PELOTA AL HILM FINAL QATAR 2022",
+        precio: 84500,
+        imagen: "https://www.digitalsport.com.ar/files/products/6419c8e08b74f-578521-500x500.jpg",
+    },
+    {
+        id: 8,
+        nombre: "Pelota oficial Mundial 2022",
+        precio: 39400,
+        imagen: "https://static.eldiario.es/clip/53508088-b292-417d-a8dd-b8f8f1dc8439_source-aspect-ratio_default_0.jpg",
+    },
+    {
+        id: 9,
         nombre: "Remera  De Los Pumas Granadero ",
         precio: 12900,
         talles: ["S", "M", "XL"],
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAFk1X7DdKc6ky4YMuZYBSWLfhteg-0N0oFQmQwJ-gP1g5GjFocWrunQADfFCSxjfqso&usqp=CAU",
     },
     {
-        id: 8,
+        id: 10,
         nombre: "Camiseta De Rugby Los Pumas Para Niños",
         precio: 15500,
         talles: ["S", "M", "XL"],
         imagen: "https://d3ugyf2ht6aenh.cloudfront.net/stores/473/866/products/d1-5858f69f9e92ca249f16905804481007-240-0.jpg",
     },
     {
-        id: 9,
+        id: 11,
         nombre: "Remera Essentials adidas",
         precio: 16400,
         talles: ["S", "M", "XL"],
         imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb6PzbLhhshIy_bW2Ol9M80e6joTuMjQY3ig&usqp=CAU",
     },
     {
-        id: 10,
+        id: 12,
         nombre: "Remera Urbana Nike Futura ",
         precio: 19900,
         talles: ["S", "M", "XL"],
         imagen: "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwa73e312e/products/NI86F939-695/NI86F939-695-1.JPG",
     },
     {
-        id: 11,
+        id: 13,
         nombre: "Camiseta Fútbol Puma Individualcup",
         precio: 15500,
         talles: ["S", "M", "XL"],
         imagen: "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/r/e/remera-de-futbol-puma-individualcup-negra-640020658289050-1.jpg",
     },
     {
-        id: 12,
+        id: 14,
         nombre: "Remera Topper  Hombre",
         precio: 16400,
         talles: ["S", "M", "XL"],
         imagen: "https://www.bompie.com.ar/media/catalog/product/cache/1e7c11b43132c034d445b386916b52f7/2/-/2-165599_5.jpg",
     },
+    
 ];
 
 
@@ -171,7 +184,7 @@ function actualizarCarrito() {
 
     carrito.forEach((producto) => {
         const li = document.createElement("li");
-        li.innerText = `${producto.nombre} - $${producto.precio} x${producto.cantidad}`;
+        li.innerText = `${producto.nombre} - $${producto.precio} (${producto.cantidad})`;
         carritoContainer.appendChild(li);
     });
 

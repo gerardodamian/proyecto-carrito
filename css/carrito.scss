@@ -13,7 +13,7 @@ body {
 h1 {
     color: yellow;
     font-size: 50px;
-    text-shadow: 3px 6px rgb(5, 121, 5);
+    text-shadow: 3px 6px #071772;
     margin-right: 30px;
     margin-top: 55px;
     
@@ -33,6 +33,7 @@ h2 {
     padding: 25px;
     background-color: rgb(6, 68, 184);
     border-radius: 10px;
+    box-shadow: 3px 5px 5px blue;
 }
 
 .producto-card {
@@ -56,6 +57,7 @@ h2 {
     margin: 7px;
     border-radius: 7px;
     background-color: rgb(228, 228, 42);
+    font-family:Luckiest Guy, cursive ;
 }
 .precio{
     color: blue;
@@ -70,6 +72,7 @@ h2 {
     border-radius: 7px;
     color: rgb(228, 220, 220);
     background-color: #071772;
+    font-family:Luckiest Guy, cursive ;
 }
 .talle{
     font-size: 20px;
@@ -78,5 +81,15 @@ h2 {
 }
 .logo{
     margin-left: 30px;
+    box-shadow: 3px 8px 10px #071772;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .producto-card {
+        width: 100%;
+    }
+    .total{
+        width: 100%;
+    }
 }
 
