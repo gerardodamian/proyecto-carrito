@@ -8,12 +8,13 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url(../multimedia/fondo.jpg);
+  font-family: Luckiest Guy, cursive;
 }
 
 h1 {
   color: yellow;
   font-size: 50px;
-  text-shadow: 3px 6px rgb(1, 44, 1);
+  text-shadow: 3px 6px rgb(5, 121, 5);
   margin-right: 30px;
   margin-top: 55px;
 }
@@ -43,12 +44,13 @@ h2 {
   padding: 10px;
   text-align: center;
   width: 200px;
-  height: 500px;
+  height: 600px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgba(73, 146, 189, 0.527);
   border-radius: 10px;
+  box-shadow: 3px 5px 5px blue;
 }
 
 .producto-card img {
@@ -76,6 +78,16 @@ h2 {
   border-radius: 7px;
   color: rgb(228, 220, 220);
   background-color: #071772;
+}
+
+.talle {
+  font-size: 20px;
+  color: rgb(238, 238, 122);
+  text-shadow: 3px 3px 5px #071772;
+}
+
+.logo {
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=carrito.css.map */

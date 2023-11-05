@@ -120,6 +120,7 @@ function mostrarProductos() {
                 botonTalle.classList.add("boton-talle");
                 botonTalle.innerText = talle;
                 productoTalle.appendChild(botonTalle);
+                productoTituloTalle.classList.add("talle")
             });
         }
 
