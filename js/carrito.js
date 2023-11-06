@@ -192,6 +192,38 @@ function actualizarCarrito() {
     totalContainer.innerText = total;
 }
 // Otras funciones y código para gestionar el carrito (como agregar productos, calcular el total, etc.)...
+ // Define la función para mostrar u ocultar el carrito
+ function toggleCarrito() {
+    const carritoContainer = document.getElementById("carrito");
+    if (carritoContainer.style.display === "none" || carritoContainer.style.display === "") {
+        carritoContainer.style.display = "block";
+    } else {
+        carritoContainer.style.display = "none";
+    }
+}
+
+// Agrega un evento de clic al botón para mostrar/ocultar el carrito
+document.getElementById("mostrarCarrito").addEventListener("click", toggleCarrito);
+
+// Función para actualizar la lista del carrito y el total
+function actualizarCarrito() {
+    const carritoContainer = document.getElementById("carrito");
+    const totalContainer = document.getElementById("total");
+    carritoContainer.innerHTML = "";
+
+    carrito.forEach((producto) => {
+        const li = document.createElement("li");
+        li.innerText = `${producto.nombre} - $${producto.precio} (${producto.cantidad})`;
+        carritoContainer.appendChild(li);
+    });
+
+    const total = calcularTotal();
+    totalContainer.innerText = `Total: $${total}`;
+}
+
+// Otras funciones y código para gestionar el carrito (como agregar productos, calcular el total, etc.)...
 
 // Inicializar la página
 mostrarProductos();
+
+

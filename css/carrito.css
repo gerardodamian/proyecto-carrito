@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +46,7 @@ h2 {
   padding: 10px;
   text-align: center;
   width: 200px;
-  height: 600px;
+  height: 700px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,8 +59,13 @@ h2 {
   max-width: 100%;
 }
 
+.producto-card img:hover {
+  transform: scale(1.2);
+  transition: transform 1.2s;
+}
+
 .boton-talle {
-  margin: 7px;
+  margin: 5px;
   border-radius: 7px;
   background-color: rgb(228, 228, 42);
   font-family: Luckiest Guy, cursive;
@@ -69,6 +75,7 @@ h2 {
   color: blue;
   font-size: 30px;
   text-shadow: 2px 2px yellow;
+  margin: 5px;
 }
 
 .nombre {
@@ -76,15 +83,23 @@ h2 {
 }
 
 .boton-compra {
-  box-shadow: 2px 2px rgb(174, 123, 221);
+  box-shadow: 3px 5px rgba(251, 250, 252, 0.527);
   border-radius: 7px;
   color: rgb(228, 220, 220);
   background-color: #071772;
   font-family: Luckiest Guy, cursive;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.boton-compra:hover {
+  background-color: #3951d8;
+  transform: scale(1.2);
+  transition: transform 1.2s;
 }
 
 .talle {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(238, 238, 122);
   text-shadow: 3px 3px 5px #071772;
 }
@@ -94,7 +109,47 @@ h2 {
   box-shadow: 3px 8px 10px #071772;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+#mostrarCarrito {
+  width: 200px;
+  height: 50px;
+  background-color: #3951d8;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+#mostrarCarrito:hover {
+  background-color: #071772;
+  transform: scale(1.2);
+  transition: transform 1.2s;
+}
+
+#carrito {
+  background-color: rgba(57, 81, 216, 0.5568627451);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#total {
+  background-color: rgba(57, 81, 216, 0.5019607843);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carrito-desplegable {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Ajusta la velocidad de la transición aquí */
+}
+
+span {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: Luckiest Guy, cursive;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 438px) {
   .producto-card {
     width: 100%;
   }
