@@ -121,16 +121,16 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     font-size: 25px;
+    color: aliceblue;
 }
-.carrito-desplegable {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease; /* Ajusta la velocidad de la transición aquí */
-}
+
 span{
     color: aliceblue;
     font-size: 20px;
     font-family: Luckiest Guy, cursive;
+}
+li{
+    color: aliceblue;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 438px) {
