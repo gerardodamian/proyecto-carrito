@@ -78,7 +78,9 @@ h2 {
 }
 
 .nombre {
-  text-shadow: 1px 1px rgb(125, 134, 49);
+  text-shadow: 2px 3px 3px rgb(8, 8, 8);
+  color: aliceblue;
+  font-size: 20px;
 }
 
 .boton-compra {
