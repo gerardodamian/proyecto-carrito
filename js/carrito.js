@@ -5,7 +5,7 @@ const productosDisponibles = [
         nombre: "Zapatillas adidas Running Duramo",
         precio: 64900,
         talles: [40, 41, 42],
-        imagen : "https://media.solodeportes.com.ar/media/catalog/product/cache/faae2c37ab1d315e4b697a7f62b421b7/z/a/zapatillas-running-adidas-duramo-10-sl-azul-100010gw4080001-1.jpg",
+        imagen: "https://media.solodeportes.com.ar/media/catalog/product/cache/faae2c37ab1d315e4b697a7f62b421b7/z/a/zapatillas-running-adidas-duramo-10-sl-azul-100010gw4080001-1.jpg",
     },
     {
         id: 2,
@@ -34,9 +34,9 @@ const productosDisponibles = [
     },
     {
         id: 6,
-        nombre: "Pelota Helicoidal 78 Sport 78 Tienda Oficial",
-        precio: 17800,
-        imagen: "https://www.digitalsport.com.ar/files/products/64a3352c94acd-625010-500x500.jpg",
+        nombre: "PELOTA RWC 2023 GILBERT",
+        precio: 39800,
+        imagen: "https://d2izjnmtylvtfh.cloudfront.net/27643081-large_default/pelota-de-rugby-gilbert-nro-5-mundial-francia.jpg",
     },
     {
         id: 7,
@@ -92,9 +92,7 @@ const productosDisponibles = [
         talles: ["S", "M", "XL"],
         imagen: "https://www.bompie.com.ar/media/catalog/product/cache/1e7c11b43132c034d445b386916b52f7/2/-/2-165599_5.jpg",
     },
-    
 ];
-
 
 // Arreglo para almacenar los productos en el carrito
 const carrito = [];
@@ -106,13 +104,10 @@ function mostrarProductos() {
     productosDisponibles.forEach((producto) => {
         const productoCard = document.createElement("div");
         productoCard.classList.add("producto-card");
-        
 
         const productoImagen = document.createElement("img");
         productoImagen.src = producto.imagen;
         productoImagen.alt = producto.nombre;
-        
-        
 
         const productoNombre = document.createElement("h3");
         productoNombre.innerText = producto.nombre;
@@ -133,7 +128,7 @@ function mostrarProductos() {
                 botonTalle.classList.add("boton-talle");
                 botonTalle.innerText = talle;
                 productoTalle.appendChild(botonTalle);
-                productoTituloTalle.classList.add("talle")
+                productoTituloTalle.classList.add("talle");
             });
         }
 
@@ -192,10 +187,13 @@ function actualizarCarrito() {
     totalContainer.innerText = total;
 }
 // Otras funciones y código para gestionar el carrito (como agregar productos, calcular el total, etc.)...
- // Define la función para mostrar u ocultar el carrito
- function toggleCarrito() {
+// Define la función para mostrar u ocultar el carrito
+function toggleCarrito() {
     const carritoContainer = document.getElementById("carrito");
-    if (carritoContainer.style.display === "none" || carritoContainer.style.display === "") {
+    if (
+        carritoContainer.style.display === "none" ||
+        carritoContainer.style.display === ""
+    ) {
         carritoContainer.style.display = "block";
     } else {
         carritoContainer.style.display = "none";
@@ -203,7 +201,9 @@ function actualizarCarrito() {
 }
 
 // Agrega un evento de clic al botón para mostrar/ocultar el carrito
-document.getElementById("mostrarCarrito").addEventListener("click", toggleCarrito);
+document
+    .getElementById("mostrarCarrito")
+    .addEventListener("click", toggleCarrito);
 
 // Función para actualizar la lista del carrito y el total
 function actualizarCarrito() {
@@ -225,5 +225,3 @@ function actualizarCarrito() {
 
 // Inicializar la página
 mostrarProductos();
-
-

@@ -1,3 +1,10 @@
+$color1:#071772;
+$color2:#3951d8;
+$color3:antiquewhite;
+$color4:yellow;
+$color5:rgba(73, 146, 189, 0.527);
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -10,32 +17,36 @@ body {
     font-family: Luckiest Guy, cursive;
 }
 h1 {
-    color: yellow;
+    color: $color4;
     font-size: 50px;
-    text-shadow: 3px 6px #071772;
+    text-shadow: 3px 6px $color1;
     margin-right: 30px;
     margin-top: 55px;
+    background-color: $color2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px $color1;
 }
 p {
-    color: antiquewhite;
+    color: $color3;
     margin: 30px;
     font-size: 25px;
 }
 h2 {
-    color: antiquewhite;
+    color: $color3;
     margin: 30px;
 }
 .total {
     display: flexbox;
     justify-content: space-between;
     padding: 25px;
-    background-color: rgb(6, 68, 184);
+    background-color: $color2;
     border-radius: 10px;
-    box-shadow: 3px 5px 5px blue;
+    box-shadow: 3px 5px 5px $color1;
 }
 
 .producto-card {
-    border: 1px solid #071772;
+    border: 1px solid $color1;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -44,100 +55,101 @@ h2 {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(73, 146, 189, 0.527);
+    background-color: $color5;
     border-radius: 10px;
-    box-shadow: 3px 5px 5px blue;
+    box-shadow: 3px 5px 5px $color1;
 }
 .producto-card img {
     max-width: 100%;
-
+    box-shadow: 3px 4px $color1;
+    border-radius: 10px;
 }
-.producto-card img:hover{
+.producto-card img:hover {
     transform: scale(1.2);
     transition: transform 1.2s;
 }
 .boton-talle {
     margin: 5px;
     border-radius: 7px;
-    background-color: rgb(228, 228, 42);
+    background-color: $color4;
     font-family: Luckiest Guy, cursive;
 }
 .precio {
-    color: blue;
+    color: $color1;
     font-size: 30px;
-    text-shadow: 2px 2px yellow;
+    text-shadow: 2px 2px $color4;
     margin: 5px;
 }
 .nombre {
     text-shadow: 2px 3px 3px rgb(8, 8, 8);
-    color: aliceblue;
+    color: $color3;
     font-size: 20px;
 }
 .boton-compra {
-    box-shadow: 3px 5px rgba(251, 250, 252, 0.527);
+    box-shadow: 3px 5px $color3;
     border-radius: 7px;
-    color: rgb(228, 220, 220);
-    background-color: #071772;
+    color: $color3;
+    background-color: $color1;
     font-family: Luckiest Guy, cursive;
     height: 40px;
     margin-bottom: 20px;
 }
-.boton-compra:hover{
-    background-color: #3951d8;
+.boton-compra:hover {
+    background-color: $color2;
     transform: scale(1.2);
     transition: transform 1.2s;
 }
 .talle {
     font-size: 16px;
-    color: rgb(238, 238, 122);
-    text-shadow: 3px 3px 5px#071772;
+    color: $color4;
+    text-shadow: 3px 3px 5px $color1;
 }
 .logo {
     margin-left: 30px;
-    box-shadow: 3px 8px 10px #071772;
-    
+    box-shadow: 3px 8px 10px $color1;
+    border-radius: 10px;
 }
-#mostrarCarrito{
+#mostrarCarrito {
     width: 250px;
     height: 50px;
-    background-color:#3951d8 ;
+    background-color: $color2;
     margin: 30px;
     border-radius: 10px;
 }
-#mostrarCarrito:hover{
-    background-color: #071772;
+#mostrarCarrito:hover {
+    background-color: $color1;
     transform: scale(1.2);
     transition: transform 1.2s;
 }
-#carrito{
-    background-color: #3951d88e;
+#carrito {
+    background-color: $color2;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-   
-    
+    transition: transform 1.2s;
 }
-#total{
-    background-color: #3951d880;
+
+#total {
+    background-color: $color2;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
     font-size: 25px;
-    color: aliceblue;
+    color: $color3;
 }
 
-span{
-    color: aliceblue;
+span {
+    color: $color3;
     font-size: 20px;
     font-family: Luckiest Guy, cursive;
 }
-li{
-    color: aliceblue;
+li {
+    color: $color3;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 438px) {
     .producto-card {
-        width: 100%;
+        width: 550px;
     }
     .total {
         width: 100%;
